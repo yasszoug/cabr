@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <title>ParkSwap</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link href="/large-icon.png" rel="shortcut icon" sizes="196x196">
+  <link href="stylesheets/normalize.css" rel="stylesheet">
+  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="stylesheets/animation.css" rel="stylesheet">
+  <link href="stylesheets/fontello.css" rel="stylesheet">
+</head>
+<body>
+  <div ng-app="appModule" class="wrapper">
+    <div class="flash-error" slide-down="isDesktop" ng-cloak class="ng-cloak"><strong>Hi, desktop user!</strong> <br /> This app is designed for portrait mobile phone browsers. For the best experience, make sure your browser window is roughly 9 units wide x 16 units tall, and refresh the page.</div>
+    <div ng-view="" class="wrapper">
+    </div>
+  </div>
+
+  <!-- Libraries -->
+  <script src="lib/bower_components/angular/angular.min.js"></script>
+  <script src="lib/bower_components/angular-route/angular-route.min.js"></script>
+  <script src="lib/angular-cookie.js"></script>
+  <!-- <script src="lib/bower_components/angular-ui-utils/mask.min.js"></script> -->
+  <script src="lib/bower_components/jquery/jquery.min.js"></script>
+<!--   // <script src="lib/bower_components/fastclick/lib/fastclick.js"></script> -->
+
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script src="lib/bower_components/angular-ui-utils/ui-utils.js"></script>
+  <script src="lib/bower_components/angular-ui-map/ui-map.js"></script>
+  <script src="lib/bower_components/angular-touch/angular-touch.min.js"></script>
+
+  <script src="client/application.js"></script>
+
+
+</body>
+</html>

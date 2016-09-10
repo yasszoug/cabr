@@ -1,0 +1,13 @@
+<i class="icon-angle-circled-left back-icon" ng-click="home()"></i>
+<div class="top">
+  <div class="pickup-message">
+    <div class="message-container">
+      Please pick up {{ rider.name }} at <strong>{{ rider.riderAddress }}</strong>
+    </div>
+  </div>
+  <img src="http://graph.facebook.com/{{ rider.uid }}/picture?height=300&type=normal&width=480" class="profile-picture"></img>
+</div>
+<div class="bottom">
+  <input type="button" class="pill pill-active" value="call" ng-click="callRider()">
+  <input type="button" class="pill pill-blue" value="directions" ng-click="navigate()">
+</div>
