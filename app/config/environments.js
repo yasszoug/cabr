@@ -8,7 +8,7 @@ module.exports = function(app){
   });
 
   app.configure('production', function(){
-    global.root = 'http://cabr99.herokuapp.com/'
+    global.root = 'http://cabr99.cleverapps.io/'
   });
 
   app.configure('test', function(){
