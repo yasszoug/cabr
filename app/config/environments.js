@@ -8,7 +8,7 @@ module.exports = function(app){
   });
 
   app.configure('production', function(){
-    global.root = 'http://parkswap.co/'
+    global.root = 'http://cabr99.herokuapp.com/'
   });
 
   app.configure('test', function(){
